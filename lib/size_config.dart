@@ -22,7 +22,7 @@ double getProportionateScreenHeight(double inputHeight) {
 }
 
 // Get the proportionate height as per screen size
-double getProportionateScreenWidth(double inputHeight) {
-  double screenHeight = SizeConfig.screenHeight;
-  return (inputHeight / 375.0) * screenHeight;
+double getProportionateScreenWidth(double inputWidth) {
+  double screenWidth = SizeConfig.screenWidth;
+  return (inputWidth / 375.0) * screenWidth;
 }
