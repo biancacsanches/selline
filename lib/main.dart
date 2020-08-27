@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:selline/constants.dart';
+import 'package:selline/routs.dart';
 import 'package:selline/screens/splash/splash_screen.dart';
 
 void main() {
@@ -21,7 +22,9 @@ class MyApp extends StatelessWidget {
             bodyText2: TextStyle(color: kTextColor)),
         visualDensity: VisualDensity.adaptivePlatformDensity,
       ),
-      home: SplashScreen(),
+      //home: SplashScreen(),
+      initialRoute: SplashScreen.routeName,
+      routes: routes,
     );
   }
 }
