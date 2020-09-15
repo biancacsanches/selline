@@ -30,3 +30,18 @@ const String kMatchPassError = "A senha está incorreta";
 const String kNameNullError = "Por favor informe seu nome";
 const String kAdressNullError = "Por favor informe seu endereço";
 const String kPhoneNullError = "Por favor informe seu telefone";
+
+final otpInputDecoration = InputDecoration(
+  contentPadding:
+      EdgeInsets.symmetric(vertical: getProportionateScreenWidth(15)),
+  enabledBorder: outlineInputBorder(),
+  focusedBorder: outlineInputBorder(),
+  border: outlineInputBorder(),
+);
+
+OutlineInputBorder outlineInputBorder() {
+  return OutlineInputBorder(
+    borderRadius: BorderRadius.circular(15),
+    borderSide: BorderSide(color: kTextColor),
+  );
+}

@@ -4,6 +4,7 @@ import 'package:selline/components/default_button.dart';
 import 'package:selline/components/form_error.dart';
 import 'package:selline/constants.dart';
 import 'package:selline/screens/forgot_password/forgot_password_screen.dart';
+import 'package:selline/screens/home/home_screen.dart';
 import 'package:selline/size_config.dart';
 
 class SignForm extends StatefulWidget {
@@ -74,7 +75,8 @@ class _SignFormState extends State<SignForm> {
           DefaultButton(
             text: "Continue",
             press: () {
-              if (_formKey.currentState.validate()) {
+              if (_formKey.currentState.validate() && errors.isEmpty) {
+                Navigator.pushNamed(context, HomeScreen.routeName);
                 _formKey.currentState.save();
               }
             },
