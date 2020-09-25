@@ -23,7 +23,7 @@ final headingStyle = TextStyle(
 final RegExp emailValidatorRegExp =
     RegExp(r"^([a-zA-Z0-9]+@[a-zA-Z0-9]+\.[a-zA-Z0-9]+)$");
 const String kEmailNullError = "Por favor informe seu email";
-const String kInvalidEmailError = "Por favor informe um email valido";
+const String kInvalidEmailError = "Por favor informe um email válido";
 const String kPassNullError = "Por favor informe sua senha";
 const String kShortPassError = "Senha muito curta";
 const String kMatchPassError = "A senha está incorreta";

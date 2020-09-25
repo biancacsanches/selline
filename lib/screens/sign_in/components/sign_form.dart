@@ -134,9 +134,9 @@ class _SignFormState extends State<SignForm> {
       validator: (value) {
         if (value.isEmpty) {
           addError(error: kEmailNullError);
-        } else if (value.isNotEmpty && !emailValidatorRegExp.hasMatch(value)) {
-          addError(error: kInvalidEmailError);
-        }
+        } //else if (value.isNotEmpty && !emailValidatorRegExp.hasMatch(value)) {
+        //addError(error: kInvalidEmailError);
+        //}
         return null;
       },
       decoration: InputDecoration(

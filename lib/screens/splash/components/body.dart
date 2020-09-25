@@ -15,15 +15,15 @@ class _BodyState extends State<Body> {
   int currentPage = 0;
   List<Map<String, String>> splashData = [
     {
-      "image": "assets/images/splash.png",
+      "image": "assets/images/splash_1.png",
       "text": "Prontxs para vender?",
     },
     {
-      "image": "assets/images/splash.png",
+      "image": "assets/images/splash_2.png",
       "text": "tudo que você imaginar",
     },
     {
-      "image": "assets/images/splash.png",
+      "image": "assets/images/splash_3.png",
       "text": "Em um só lugar",
     }
   ];
